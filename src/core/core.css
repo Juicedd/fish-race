@@ -16,6 +16,7 @@
   }
 
   #content-container {
+    position: relative;
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -26,11 +27,11 @@
   }
 
   .fish {
+    display: inline-block;
+    
     position: absolute;
     transition: left .05s;
-    
     left: 0;
-    
     width: 200px;
     height: 100px;
   }
@@ -53,4 +54,10 @@
 
   #finish {
     width: 25px; 
+  }
+  
+  #start-button {
+    position: absolute;
+    display:none;
+    top: 45.6%;
   }
